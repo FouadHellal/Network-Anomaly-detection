@@ -40,7 +40,7 @@ The script implements the following machine learning models:
 The script evaluates each model's performance on both the training and testing datasets, reporting metrics such as accuracy, precision, recall, F1-score, and ROC curve
 
 ## Folder structure :
-    ```bash
+    ```
     network-anomaly-detection/
     │
     ├── data/
