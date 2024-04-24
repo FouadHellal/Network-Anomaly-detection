@@ -19,7 +19,7 @@ from sklearn.metrics import precision_score, recall_score, f1_score, roc_auc_sco
 import warnings
 warnings.filterwarnings("ignore")
 
-df = pd.read_csv("Train.txt",sep=",",names=["duration","protocoltype","service","flag","srcbytes","dstbytes","land", "wrongfragment","urgent","hot","numfailedlogins","loggedin", "numcompromised","rootshell","suattempted","numroot","numfilecreations", "numshells","numaccessfiles","numoutboundcmds","ishostlogin",
+df = pd.read_csv("data/Train.txt",sep=",",names=["duration","protocoltype","service","flag","srcbytes","dstbytes","land", "wrongfragment","urgent","hot","numfailedlogins","loggedin", "numcompromised","rootshell","suattempted","numroot","numfilecreations", "numshells","numaccessfiles","numoutboundcmds","ishostlogin",
 "isguestlogin","count","srvcount","serrorrate", "srvserrorrate",
 "rerrorrate","srvrerrorrate","samesrvrate", "diffsrvrate", "srvdiffhostrate","dsthostcount","dsthostsrvcount","dsthostsamesrvrate", "dsthostdiffsrvrate","dsthostsamesrcportrate",
 "dsthostsrvdiffhostrate","dsthostserrorrate","dsthostsrvserrorrate",
@@ -108,7 +108,7 @@ print(classification_report(y, svm_pred))
 
 """**Using Random Forest Classifier Model on test data:**"""
 
-test_df = pd.read_csv("Test.txt",sep=",",names=["duration","protocoltype","service","flag","srcbytes","dstbytes","land", "wrongfragment","urgent","hot","numfailedlogins","loggedin", "numcompromised","rootshell","suattempted","numroot","numfilecreations", "numshells","numaccessfiles","numoutboundcmds","ishostlogin",
+test_df = pd.read_csv("data/Test.txt",sep=",",names=["duration","protocoltype","service","flag","srcbytes","dstbytes","land", "wrongfragment","urgent","hot","numfailedlogins","loggedin", "numcompromised","rootshell","suattempted","numroot","numfilecreations", "numshells","numaccessfiles","numoutboundcmds","ishostlogin",
 "isguestlogin","count","srvcount","serrorrate", "srvserrorrate",
 "rerrorrate","srvrerrorrate","samesrvrate", "diffsrvrate", "srvdiffhostrate","dsthostcount","dsthostsrvcount","dsthostsamesrvrate", "dsthostdiffsrvrate","dsthostsamesrcportrate",
 "dsthostsrvdiffhostrate","dsthostserrorrate","dsthostsrvserrorrate",
